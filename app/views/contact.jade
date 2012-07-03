@@ -5,7 +5,14 @@ p
   |  :: Contact
 
 
-div(style='width: 850px;')        
+div(style='width: 850px;')
+
+  if(typeof msg !== 'undefined')
+    if(!!err)
+      div(class='msgbox err') #{msg}
+    else
+      div(class='msgbox success') #{msg}
+      
   div(style='width: 500px; float: left;', id='formCont') 
     form(action='/contact', name='contact', id='contact', method='post')
       fieldset
