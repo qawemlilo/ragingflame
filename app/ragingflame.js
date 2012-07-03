@@ -43,4 +43,4 @@ ragingflame.validate = {
 };
 
 
-module.exports = ragingflame;
+exports.ragingflame = ragingflame;
