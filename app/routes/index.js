@@ -38,7 +38,7 @@ exports.validate = {
             i++;
         }
   
-        if (!obj.email || !this.isValidEmailAddress(obj.email)) {
+        if (!obj.email || !this.email(obj.email)) {
             i++;
             if (errMsg) errMsg += ', Email';
                 else errMsg += 'Email';
