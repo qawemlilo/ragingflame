@@ -3,8 +3,9 @@
  * Module dependencies.
  */
 var express = require('express')
-  , nodemailer = require('nodemailer')
   , routes = require('./routes')
+  , nodemailer = require('nodemailer')
+  , ragingflame = require('./ragingflame');
 
 var app = module.exports = express.createServer();
 
@@ -35,7 +36,7 @@ app.get('/contact', routes.contact);
 app.post('/contact', function(req, res){
     var mailOpts, validation, smtpTrans, name = req.body.name, email = req.body.email, message = req.body.message, errMsg = '';
     
-    validation = routes.validate.fields({
+    validation = ragingflame.validate.fields({
         name: name, 
         email: email, 
         textarea: message
@@ -59,15 +60,15 @@ app.post('/contact', function(req, res){
     smtpTrans = nodemailer.createTransport('SMTP', {
         service: 'Gmail',
         auth: {
-            user: "qawemlilo@gmail.com",
-            pass: "qerlkxveorabgzrg"
+            user: ragingflame.email,
+            pass: ragingflame.password
         }
     });
     
         
     mailOpts = {
         from: name + ' <' + email + '>',
-        to: 'qawemlilo@gmail.com',
+        to: ragingflame.email,
         subject: 'Contact from rflab website',
         text: message
     };
