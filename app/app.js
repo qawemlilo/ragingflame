@@ -3,6 +3,7 @@
  * Module dependencies.
  */
 var express = require('express')
+  , nodemailer = require('nodemailer')
   , routes = require('./routes')
 
 var app = module.exports = express.createServer();
@@ -31,6 +32,9 @@ app.get('/', routes.index);
 app.get('/about', routes.about);
 app.get('/projects', routes.projects);
 app.get('/contact', routes.contact);
+app.post('/contact', function(req, res){
+    res.render('contact', { title: 'Ragigng Flame Laboratory - Contact' })
+});
 
 app.listen(3010);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
