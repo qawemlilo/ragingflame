@@ -1,0 +1,50 @@
+h1 Contact
+
+p
+  a(href='/', class='breadcrumbs') Home
+  |  :: Contact
+
+
+div(style='width: 850px;')        
+  div(style='width: 500px; float: left;', id='formCont') 
+    form(action='/contact', name='contact', id='contact', method='post')
+      fieldset
+        p 
+          label(for='name') Name:
+          br 
+          input(name='name', type='text', class='input', value='', id='name', style='width: 400px; color: #000')
+        p 
+          label(for='email') Email:
+          br 
+          input(name='email', type='text', class='input', value='', id='email', style='width: 400px; color: #000')
+        p 
+          label(for='message') Message:
+          br 
+          textarea(name='message', class='textarea input', cols='30', rows='10', id='message', style='width: 400px; color: #000')
+        p 
+          input(name='submit', type='submit', class='button white', value='Send', id='submit')
+          
+  
+  div(style='width: 350px; float: right; padding-top: 20px;')
+    p 
+      strong Email: 
+      br
+      a(href='mailto:dev@ragingflame.co.za') dev@ragingflame.co.za
+    p 
+      strong Twitter: 
+      br
+      a(href='http://twitter.com/ragingflameblog', target='_blank') @ragingflameblog
+    p 
+      strong Github: 
+      br
+      a(href='//github.com/qawemlilo', target='_blank') http://github.com/qawemlilo
+      
+    p 
+      strong Google+: 
+      br
+      a(href='https://plus.google.com/117263379026168438856', target='_blank', rel='publisher') +Raging Flame Lab
+      
+    
+  div(style='clear: both; height: 2px; width: 100%') &nbsp;
+
+   
