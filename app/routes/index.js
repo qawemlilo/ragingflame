@@ -10,3 +10,7 @@ exports.index = function(req, res){
 exports.about = function(req, res){
   res.render('about', { title: 'Ragigng Flame Laboratory - About' })
 };
+
+exports.projects = function(req, res){
+  res.render('about', { title: 'Ragigng Flame Laboratory - Projects' })
+};
