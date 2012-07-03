@@ -4,6 +4,6 @@
     "dependencies": {
         "express": "2.5.2",
         "jade": ">= 0.0.1",
-        "nodemailer": ">= 1.x.x"
+        "nodemailer": "1.1.x"
     }
 }
