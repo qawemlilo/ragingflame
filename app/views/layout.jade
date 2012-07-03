@@ -2,5 +2,13 @@
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body!= body
+    meta(charset='utf-8')
+    meta(name='author', content='Qawelesizwe Mlio')
+    meta(name='description', content='Raging Flame Laboratory - web and software development')
+    link(rel='stylesheet', href='http://apps.rflab.co.za/stylesheets/style.css')
+    link(rel='stylesheet', href='http://apps.rflab.co.za/stylesheets/tipTip.css')
+    script(src='http://apps.rflab.co.za/javascripts/libs/modernizr-2.5.3.min.js')
+  body
+    div.container
+      div.content!= body
+      div.footer!= partial('footer')
