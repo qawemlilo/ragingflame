@@ -103,6 +103,6 @@ app.post('/contact', function (req, res) {
     });
 });
 
-app.listen(3002, function () {
+app.listen(3002, function git() {
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });
