@@ -83,8 +83,8 @@ app.post('/contact', function (req, res) {
     mailOpts = {
         from: name + ' <' + email + '>',
         to: ragingflame.email,
-        subject: 'Contact from rflab website',
-        text: message
+        subject:'Contact from rflab website',
+        text: 'From: ' + email + "\n \n" +  message
     };
     
     
