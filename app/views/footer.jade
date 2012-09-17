@@ -11,16 +11,7 @@ ul
   
   li.last: | powered by 
     a(href='http://nodejs.org/', class='first', target='_blank', style='color: #448800; font-weight: bold; margin-right: 0px') Node.JS
-    
-script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
-script(src='http://apps.rflab.co.za/javascripts/jquery.tipTip.js')
 
 if(page == 'contact')
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
   script(src='http://apps.rflab.co.za/javascripts/validate.js');
-  
-script(type='text/javascript')
-  (function($) {
-    $(document).ready(function() {
-      $(".someClass").tipTip({maxWidth: "250px", delay: 100, defaultPosition: "top", edgeOffset: 18});
-    });
-  })(jQuery);
