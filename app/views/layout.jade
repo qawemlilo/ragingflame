@@ -10,8 +10,11 @@ html
     link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
     //if lt IE 9
       script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+      
     script(src='http://apps.rflab.co.za/javascripts/libs/modernizr-2.5.3.min.js')
   body
     div(class='navbar navbar-inverse navbar-fixed-top')!= partial('header')
-    div.container!= body
+    
+    div.container != body
+    
     footer!= partial('footer')
