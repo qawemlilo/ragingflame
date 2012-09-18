@@ -1,17 +1,25 @@
-!!!
-html
+!!! 5
+//if lt IE 7
+  <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+//if IE 7
+  <html class="no-js lt-ie9 lt-ie8" lang="en">
+//if IE 8
+  <html class="no-js lt-ie9" lang="en">
+//[if gt IE 8]><!
+html(class='no-js', lang='en')
+  //<![endif]
   head
-    title= title
     meta(charset='utf-8')
-    meta(name='author', content='Qawelesizwe Mlio')
+    title= title
     meta(name='description', content='Raging Flame Laboratory - web and software development')
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')
-    script(src='http://apps.rflab.co.za/javascripts/libs/modernizr-2.5.3.min.js')
+    link(rel='stylesheet', href='/stylesheets/bootstrap-responsive.min.css')    
+    
+    script(src='http://apps.rflab.co.za/javascripts/libs/modernizr-2.5.3.min.js')  
   body
     div(class='navbar navbar-inverse navbar-fixed-top')!= partial('header')
     
-    div.container != body
+    div.container!= body
     
     footer!= partial('footer')
