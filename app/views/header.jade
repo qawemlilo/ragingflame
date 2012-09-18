@@ -10,21 +10,21 @@ div(class='navbar-inner')
     div(class='nav-collapse collapse')
       ul(class='nav')
         if (page === 'index')
-          li: a(href='/', class='active') Home
+          li.active: a(href='/') Home
         else
           li: a(href='/') Home
           
         if (page === 'about')
-          li: a(href='/about', class='active') About
+          li.active: a(href='/about') About
         else
           li: a(href='/about') About
           
         if (page === 'projects')
-          li: a(href='/projects', class='active') Projects
+          li.active: a(href='/projects') Projects
         else
           li: a(href='/projects') Projects
           
         if (page === 'contact')
-          li: a(href='/contact', class='active') Contact
+          li.active: a(href='/contact') Contact
         else
           li: a(href='/contact') Contact
