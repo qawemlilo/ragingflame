@@ -9,7 +9,22 @@ div(class='navbar-inner')
     
     div(class='nav-collapse collapse')
       ul(class='nav')
-        li.active: a(href='/') Home
-        li: a(href='/about') About
-        li: a(href='/projects') Projects
-        li: a(href='/contact') Contact
+        if (page === 'index')
+          li: a(href='/', class='active') Home
+        else
+          li: a(href='/') Home
+          
+        if (page === 'about')
+          li: a(href='/about', class='active') About
+        else
+          li: a(href='/about') About
+          
+        if (page === 'projects')
+          li: a(href='/projects', class='active') Projects
+        else
+          li: a(href='/projects') Projects
+          
+        if (page === 'contact')
+          li: a(href='/contact', class='active') Contact
+        else
+          li: a(href='/contact') Contact
