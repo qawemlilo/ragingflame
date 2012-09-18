@@ -18,5 +18,6 @@ html(class='no-js', lang='en')
     script(src='/javascripts/modernizr.js')
   body
     div(class='navbar navbar-inverse navbar-fixed-top')!= partial('header')
-    div.container!= body
-    footer!= partial('footer')
+    div.container
+      div.hero-unit!= body
+      footer!= partial('footer')
