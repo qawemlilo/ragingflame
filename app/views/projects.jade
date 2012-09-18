@@ -1,27 +1,30 @@
 h2 Side Projects
 
-div.projects
-  ul
-    li(style='background: url(http://apps.rflab.co.za/images/email2article.jpg) 0px 0px no-repeat;')
-      h3
-        a(href='http://email2article.com/', target='_blank') Email2Article
-      p.langs [Joomla! CMS, OOP PHP, Linux Admin, JavaScript, HTML5Boilerplate, Email Parsing &amp; Piping, MySQL, Git] 
-      p Email2Article is a web app that converts emails to Joomla! CMS articles. Email2Article was built with more than a douzen custom extensions. 
-      
-    li(style='background: url(http://apps.rflab.co.za/images/bookmarks.jpg) 0px 0px no-repeat;')
-      h3 
-        a(href='http://qawemlilo.github.com/Bookmarks/', target='_blank') A Hacker's Bookmarks
-      p.langs [JavaScript, jQuery, CSS, Google Docs, Git]
-      p A Hacker's Bookmarks is a browser bookmarking app that saves all your bookmarks onto a Google Docs Spreadsheet, 100% client side JavaScript. 
-      
-    li(style='background: url(http://apps.rflab.co.za/images/slider.jpg) 0px 0px no-repeat;')
-      h3 
-        a(href='http://apps.rflab.co.za/content-slider/', target='_blank') Content Slider
-      p.langs [JavaScript, jQuery, CSS, Git]
-      p Content Slider is a simple and elegant jQuery plugin that displays sliding html content.
-      
-    li(style='background: url(http://apps.rflab.co.za/images/greyscale.jpg) 0px 0px no-repeat;')
-      h3 
-        a(href='http://apps.rflab.co.za/rgb-to-grayscale/', target='_blank') RGB to Greyscale
-      p.langs [JavaScript, CSS, HTML5, Git]
-      p RGB to greyscale is a JavaScript / HTML5 application that converts colour images to black and white.
+div.row-fluid
+  ul.thumbnails
+    li.span4 
+      div.thumbnail
+        img(src='http://apps.rflab.co.za/images/email2article.jpg', alt='')
+      div.caption
+        h3 Email2Article
+        p Email2Article is a web app that converts emails to Joomla! CMS articles. Email2Article was built with more than a douzen custom extensions.
+        p
+          a(class='btn btn-primary' href='http://email2article.com/'> Visit Project
+              
+    li.span4 
+      div.thumbnail
+        img(src='http://apps.rflab.co.za/images/bookmarks.jpg', alt='A Hacker's Bookmarks')
+      div.caption
+        h3 A Hacker's Bookmarks
+        p A Hacker's Bookmarks is a browser bookmarking app that saves all your bookmarks onto a Google Docs Spreadsheet, 100% client side JavaScript.
+        p
+          a(class='btn btn-primary' href='http://qawemlilo.github.com/Bookmarks/'> Visit Project
+
+    li.span4 
+      div.thumbnail
+        img(src='http://apps.rflab.co.za/images/slider.jpg', alt='')
+      div.caption
+        h3 Content Slider
+        p Content Slider is a simple and elegant jQuery plugin that displays sliding html content.
+        p
+          a(class='btn btn-primary' href='http://apps.rflab.co.za/content-slider/'> Visit Project
