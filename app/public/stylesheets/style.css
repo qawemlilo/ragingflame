@@ -124,7 +124,9 @@ h2 {
 	}
 
 .download-box a {
-  font-size: 1.4em;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 14px 24px 14px 24px;
 }	
 	
 	
