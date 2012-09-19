@@ -1,52 +1,31 @@
-h1 Contact
+h2(class='page-title', id='scroll_up') Contact
 
-div(style='width: 850px;')
-
-  if(typeof msg !== 'undefined')
-    if(!!err)
-      div(class='msgbox err') #{msg}
-    else
-      div(class='msgbox success') #{msg}
-      
-  div(style='width: 500px; float: left;', id='formCont') 
-    form(action='/contact', name='contact', id='contact', method='post')
-      fieldset
-        p 
-          label(for='name') Name:
-          br 
-          input(name='name', type='text', class='input', value='', id='name', style='width: 400px; color: #000')
-        p 
-          label(for='email') Email:
-          br 
-          input(name='email', type='text', class='input', value='', id='email', style='width: 400px; color: #000')
-        p 
-          label(for='message') Message:
-          br 
-          textarea(name='message', class='textarea input', cols='30', rows='10', id='message', style='width: 400px; color: #000')
-        p 
-          input(name='submit', type='submit', class='button white', value='Send', id='submit')
-          
-  
-  div(style='width: 350px; float: right; padding-top: 20px;')
-    p 
-      strong Email: 
-      br
-      a(href='mailto:dev@ragingflame.co.za') dev@ragingflame.co.za
-    p 
-      strong Twitter: 
-      br
-      a(href='http://twitter.com/ragingflameblog', target='_blank') @ragingflameblog
-    p 
-      strong Github: 
-      br
-      a(href='//github.com/qawemlilo', target='_blank') http://github.com/qawemlilo
-      
-    p 
-      strong Google+: 
-      br
-      a(href='https://plus.google.com/117263379026168438856', target='_blank', rel='publisher') +Raging Flame Lab
-      
+div(class='span4', id='contact-info')
+  h3 Contact Us
+  p FlexApp is free and thus unfortunately we cannot provide basic support for it. We simply don't have the time to answer everyone's questions.
+  p However, you may contact us about general business inquiries or to report bugs in the template!
+  p
+    a(href="mailto:qawemlilo@gmail.com") qawemlilo@gmail.com
     
-  div(style='clear: both; height: 2px; width: 100%') &nbsp;
+div(class='span7', id='contact-form')
+  form.form-horizontal
+    fieldset
+      div.control-group
+        label(class='control-label', for='name') Name
+        div.controls
+          input(class='input-xlarge', type='text', id='name', name='name', placeholder='John Doe')
+          
+      div.control-group
+        label(class='control-label', for='email') Email
+        div.controls
+          input(class='input-xlarge', name='email', type='text', id='email', placeholder='John Doe')
+          
+      div.control-group
+        label(class='control-label', for='message') Message
+        div.controls
+          textarea(class='input-xlarge', rows='3', id='message', name='message', placeholder='Your message...')
+          
+      div.form-actions
+        button(type='submit', class='btn btn-primary') SEND
 
    
