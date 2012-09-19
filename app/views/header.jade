@@ -1,11 +1,14 @@
 div(class='navbar-inner')
   div(class='container')
+    a(class='brand pull-left', href='/') 
+      | Raging Flame Lab 
+      i(class='icon-fire icon-white') 
+      
     a(class='btn btn-navbar', data-toggle='collapse', data-target='.nav-collapse')
       span(class='icon-bar')
       span(class='icon-bar')
-      span(class='icon-bar')
-        
-    a(class='brand', href='/') Raging Flame Lab
+      span(class='icon-bar') 
+     
     
     div(class='nav-collapse collapse')
       ul(class='nav')
@@ -19,10 +22,10 @@ div(class='navbar-inner')
         else
           li: a(href='/about') About
           
-        if (page === 'projects')
-          li.active: a(href='/projects') Projects
+        if (page === 'services')
+          li.active: a(href='/services') Services
         else
-          li: a(href='/projects') Projects
+          li: a(href='/services') Services
           
         if (page === 'contact')
           li.active: a(href='/contact') Contact
