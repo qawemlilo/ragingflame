@@ -122,7 +122,10 @@ h2 {
 	font-size: 0.9em;
 	line-height: 1.3em;
 	}
-	
+
+.download-box a {
+  font-size: 1.4em;
+}	
 	
 	
 /***** ABOUT PAGE *****/
