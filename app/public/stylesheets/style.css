@@ -10,35 +10,35 @@
  
  /***** STRUCTURE *****/
  
- body { 
-	
-
-background: url('../images/bg.png') repeat-x;
-	background-color: #fff;
-	}
+body { 
+ background: url('../images/bg.png') repeat-x;
+ background-color: #fff;
+}
 	
 h1, h2, h3, h4, h5, h6 {
-	text-shadow: white 0.02em 0.02em;
-	font-
-
-family: 'QlassikBold', sans-serif;
-	}
+  text-shadow: white 0.02em 0.02em;
+  font-family: 'QlassikBold', sans-serif;
+}
 	
 h2 {
-	font-size: 2.3em;
+ font-size: 2.3em;
 }
  
  .content {
 	padding-top:100px;
 	font-size: 1.1em;
 	line-height: 1.8em;
-	}
+}
 	
 .content p {
 	font-size: 1.0em;
 	line-height: 1.8em;
 	margin-bottom: 1.1em;
-	}
+}
+
+.hidden-p {
+ display: none;
+}
 	
 
 /***** BODY *****/
