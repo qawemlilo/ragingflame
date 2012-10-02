@@ -11,13 +11,17 @@
  /***** STRUCTURE *****/
  
  body { 
-	background: url('../images/bg.png') repeat-x;
+	
+
+background: url('../images/bg.png') repeat-x;
 	background-color: #fff;
 	}
 	
 h1, h2, h3, h4, h5, h6 {
 	text-shadow: white 0.02em 0.02em;
-	font-family: 'QlassikBold', sans-serif;
+	font-
+
+family: 'QlassikBold', sans-serif;
 	}
 	
 h2 {
@@ -38,13 +42,43 @@ h2 {
 	
 
 /***** BODY *****/
+
+#appMessage {
+ width: 100%;
+ position: fixed;
+ top: 
+
+0;
+ left: 0;
+ z-index: 1031;
+ background: #CC0000;
+ background: -moz-linear-gradient(top, #CC0000 0%, #CC0000 100%);
+ -ms-filter: 
+
+"progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC0000', endColorstr='#CC0000')";
+ -pie-background: linear-gradient(#CC0000, #CC0000 100%);
+ behavior: 
+
+url(PIE.htc);
+ height: 25px;
+ text-align: center;
+ padding: 15px 0px 15px 0px;
+ color: #fff;
+}
+
+.invalid {
+ border: 1px solid red;
+}
+
 	
 .page-title {
-	padding: 0px 0 30px 0;
+	padding: 0px 0 
+
+10px 0;
 	}
 	
 .arrow-top img {
-	margin: -7px 0 0 15px;
+	margin: -4px 15px 0px 0px;
 	}
 
 
@@ -53,7 +87,9 @@ h2 {
 
 .navbar .brand {
 	font-weight: bold;
-	color:#fefefe;
+	
+
+color:#fefefe;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
 }
 
@@ -62,7 +98,9 @@ h2 {
 /***** HOMEPAGE *****/
 	
 #details {
-	position: relative;
+	position: 
+
+relative;
 	float: right;
 	width: 527px;
 	margin-top: 80px;
@@ -72,7 +110,9 @@ h2 {
 #icon {
 	position: relative;
 	float: left;
-	margin-right: 20px;
+	margin-right: 
+
+20px;
 }
 
 #app-name {
@@ -84,14 +124,18 @@ h2 {
 
 #app-name h1 {
 	font-size: 5.5em;
-	font-size: 5.5em;
-	color: #ECECEC;
+	font-size: 
+
+5.5em;
+	color: #000;
 	text-shadow: -1px 0 #B3B3B3, 0 1px #B3B3B3, 1px 0 #B3B3B3, 0 -1px #B3B3B3, #020763 0.03em 0.03em;
 	}
 	
 #version {
 	top: 30px;
-	position: relative;
+	
+
+position: relative;
 	float: left;
 }
 
@@ -102,8 +146,10 @@ h2 {
 }
 
 #description {
-	margin-top: 2em;
-	margin-bottom: 1.8em;
+	margin-top: 1.5em;
+	margin-
+
+bottom: 1em;
 }
 
 #features li {
@@ -111,22 +157,26 @@ h2 {
 	list-style: none;
 	padding-left: 25px;
 	margin-left: -23px;
-	line-height: 1.7em;
+	
+
+line-height: 1.7em;
 }
 
 .download-box {
-	width: 45%;
+	width: 95%;
 	float: left;
 	padding-top: 20px;
 	padding-right: 5%;
 	font-size: 0.9em;
-	line-height: 1.3em;
+	line-height: 
+
+1.3em;
 	}
 
 .download-box a {
   font-size: 24px;
   font-weight: 200;
-  padding: 14px 24px 14px 24px;
+  padding: 14px;
 }	
 	
 	
@@ -134,7 +184,9 @@ h2 {
 
 .updates ul {
 	list-style: none;
-	padding-top: 10px;
+	
+
+padding-top: 10px;
 	clear: both;
 	margin: 0 0 25px 0;
 	}
@@ -144,7 +196,9 @@ h2 {
 	}
 	
 .updates hr {
-	border-top: 1px solid #CCC;
+	border-top: 1px 
+
+solid #CCC;
 	}
 	
 .updates .label {
@@ -158,7 +212,9 @@ h2 {
 	}
 
 .release-date {
-	float:right;
+	
+
+float:right;
 	margin-top: 4px;
 	color: #999;
 	font-size: 0.85em;
@@ -170,7 +226,9 @@ h2 {
 
 .fix {
 	background-color: #468847;
-	padding: 1px 8px 2px;
+	
+
+padding: 1px 8px 2px;
 	}
 	
 
@@ -195,15 +253,24 @@ h2 {
 
 .footer {
 	font-size: 0.85em;
-	line-height: 1.5em;
+	
+
+line-height: 1.5em;
 	padding: 15px 0;
 	border-top: 1px solid #CCC;
 }
 
+.footer  a {
+margin-right: 10px;
+}
+
 #copyright {
 	float:left;
+    height: 20px;
 	}
 	
 #credits {
 	float:right;
+    height: 20px;
 	}
+    

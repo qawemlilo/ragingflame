@@ -109,6 +109,13 @@
 
 @media screen and (max-width: 480px) {
 
+#tagline {
+    clear: both;
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
 #version {
 	display: none;
 	}
