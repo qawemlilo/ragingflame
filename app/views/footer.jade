@@ -15,3 +15,13 @@ script(src='http://apps.rflab.co.za/rflab/javascripts/bootstrap-collapse2.js')
 
 if(page == 'contact')
   script(src='http://apps.rflab.co.za/javascripts/validate.js')
+  
+script(type='text/javascript')
+  $(function () {
+    $('#readmo').click(function (e) {
+      e.preventDefault();
+      
+      $('.hidden-p').slideDown('slow');
+      $('#readmo').remove();
+    });
+  });
