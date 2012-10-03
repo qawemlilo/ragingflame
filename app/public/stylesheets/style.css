@@ -36,6 +36,13 @@ line-height: 1.8em;
 margin-bottom: 1.1em;
 }
 
+.resize {
+ position: fixed;
+ right: 0px;
+ bottom: 0px;
+ z-index: 1000;
+}
+
 .hidden-p {
 display: none;
 }
