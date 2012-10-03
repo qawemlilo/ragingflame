@@ -46,20 +46,13 @@ h2 {
 #appMessage {
  width: 100%;
  position: fixed;
- top: 
-
-0;
+ top: 0;
  left: 0;
  z-index: 1031;
  background: #CC0000;
  background: -moz-linear-gradient(top, #CC0000 0%, #CC0000 100%);
- -ms-filter: 
-
-"progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC0000', endColorstr='#CC0000')";
+ -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#CC0000', endColorstr='#CC0000')";
  -pie-background: linear-gradient(#CC0000, #CC0000 100%);
- behavior: 
-
-url(PIE.htc);
  height: 25px;
  text-align: center;
  padding: 15px 0px 15px 0px;
@@ -124,18 +117,14 @@ relative;
 
 #app-name h1 {
 	font-size: 5.5em;
-	font-size: 
-
-5.5em;
+	font-size: 5.5em;
 	color: #000;
 	text-shadow: -1px 0 #B3B3B3, 0 1px #B3B3B3, 1px 0 #B3B3B3, 0 -1px #B3B3B3, #020763 0.03em 0.03em;
 	}
 	
 #version {
 	top: 30px;
-	
-
-position: relative;
+	position: relative;
 	float: left;
 }
 
@@ -147,9 +136,7 @@ position: relative;
 
 #description {
 	margin-top: 1.5em;
-	margin-
-
-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 #features li {
@@ -177,6 +164,10 @@ line-height: 1.7em;
   font-size: 24px;
   font-weight: 200;
   padding: 14px;
+}
+
+.home-first-row {
+ margin-bottom: 20px;
 }	
 	
 	

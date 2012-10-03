@@ -126,6 +126,10 @@
  padding-bottom: 5px;
 }
 
+.home-first-row {
+ margin-bottom: 10px;
+}	
+
 #version {
  display: none;
 }
