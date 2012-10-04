@@ -1,4 +1,7 @@
 div(class='row-fluid', id='contact')
+  if (msg)
+    div(class='alert alert-success', style='text-align: center') #{msg}
+    
   div(class='span6', id='contact-info')
     h3 Contact Us
     p We are available 24/7, please don't hesitate to drop us a line for inquiries or to report bugs.
