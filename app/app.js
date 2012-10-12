@@ -1,32 +1,34 @@
 
+"use strict";
+
 /**
  * Module dependencies.
  */
+ 
+var express = require('express'), 
+    nodemailer = require('nodemailer'), // module for sending emails
+    routes = require('./routes'),
+    ragingflame = require('./ragingflame'), // include app custom script file
 
-var express = require('express')
-  , nodemailer = require('nodemailer') // module for sending emails
-  , routes = require('./routes')
-  , ragingflame = require('./ragingflame'); // include app custom script file
-
-var app = module.exports = express.createServer();
+    app = module.exports = express.createServer();
 
 // Configuration
 
 app.configure(function(){
-  app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
-  app.use(express.bodyParser());
-  app.use(express.methodOverride());
-  app.use(app.router);
-  app.use(express.static(__dirname + '/public'));
+    app.set('views', __dirname + '/views');
+    app.set('view engine', 'jade');
+    app.use(express.bodyParser());
+    app.use(express.methodOverride());
+    app.use(app.router);
+    app.use(express.static(__dirname + '/public'));
 });
 
 app.configure('development', function(){
-  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+    app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 });
 
 app.configure('production', function(){
-  app.use(express.errorHandler());
+    app.use(express.errorHandler());
 });
 
 // Routes

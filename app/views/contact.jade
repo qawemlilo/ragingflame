@@ -1,4 +1,10 @@
 div(class='row-fluid', id='contact')
+  if(msg === 'Error occured, message not sent.')
+    div(class='alert alert-error', style='text-align: center') Error occured, message not sent.
+    
+  if(msg === 'Message sent! Thank you.')
+    div(class='alert alert-success', style='text-align: center') Message sent! Thank you.
+    
   div(class='span6', id='contact-info')
     h3 Contact Us
     p We are available 24/7, please don't hesitate to drop us a line for inquiries or to report bugs.

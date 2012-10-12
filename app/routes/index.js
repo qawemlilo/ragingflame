@@ -14,7 +14,7 @@ exports.about = function(req, res){
 
 
 exports.projects = function(req, res){
-  res.render('projects', { title: 'Raging Flame Laboratory - Projects', page: 'projects' })
+  res.render('projects', { title: 'Raging Flame Laboratory - Projects', page: 'projects', msg: false })
 };
 
 
