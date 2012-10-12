@@ -11,7 +11,7 @@ div(class='row-fluid', id='contact')
       a(href='mailto:info@ragingflame.co.za') info@ragingflame.co.za
     
   div(class='span5', id='contact-form')
-    form.form-horizontal
+    form(class='form-horizontal', action='/contact', method='post')
       fieldset
         div.control-group
           label(class='control-label', for='name') Name
