@@ -1,0 +1,42 @@
+div(class='row-fluid', id='contact')
+  if(msg === 'Error occured, message not sent.')
+    div(class='alert alert-error', style='text-align: center') Error occured, message not sent.
+    
+  if(msg === 'Message sent! Thank you.')
+    div(class='alert alert-success', style='text-align: center') Message sent! Thank you.
+    
+  div(class='span6', id='contact-info')
+    h3 Contact Us
+    p 
+      img(src='http://apps.rflab.co.za/rflab/images/contact.png', style='float: left; margin-top: 5px; margin-right: 5px; margin-bottom: 5px;') 
+      | We are available 24/7, please don't hesitate to drop us a line for inquiries or to report bugs.
+    p
+      strong Support: 
+      a(href='mailto:support@ragingflame.co.za') support@ragingflame.co.za
+      
+    p
+      strong General:  
+      a(href='mailto:info@ragingflame.co.za') info@ragingflame.co.za
+    
+  div(class='span5', id='contact-form')
+    form(class='form-horizontal', action='/contact', method='post')
+      fieldset
+        div.control-group
+          label(class='control-label', for='name') Name
+          div.controls
+            input(class='input-xlarge', type='text', id='name', name='name', placeholder='Your name')
+          
+        div.control-group
+          label(class='control-label', for='email') Email
+          div.controls
+            input(class='input-xlarge', name='email', type='text', id='email', placeholder='Your email address')
+          
+        div.control-group
+          label(class='control-label', for='message') Message
+          div.controls
+            textarea(class='input-xlarge', rows='3', id='message', name='message', placeholder='Your message...')
+          
+        div.form-actions
+          button(type='submit', class='btn btn-primary') SEND
+
+   

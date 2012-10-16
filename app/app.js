@@ -33,17 +33,17 @@ app.configure('production', function(){
 
 // Routes
 
-// Load home page
 app.get('/', routes.index);
 
-// Load about page
 app.get('/about', routes.about);
 
-// Load projects page
 app.get('/projects', routes.projects);
 
-// Load contact page
 app.get('/contact', routes.contact);
+
+app.get('/tweaks', routes.tweaks);
+
+app.get('/packages', routes.packages);
 
 // Process contact form
 app.post('/contact', function (req, res) { 

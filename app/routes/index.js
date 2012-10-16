@@ -21,3 +21,11 @@ exports.projects = function(req, res){
 exports.contact = function(req, res){
   res.render('contact', { title: 'Raging Flame Laboratory - Contact Us', page: 'contact', msg: false })
 };
+
+exports.tweaks = function(req, res){
+  res.render('tweaks', { title: 'Raging Flame Laboratory - Tweaks', page: 'tweaks', msg: false })
+};
+
+exports.packages = function(req, res){
+  res.render('packages', { title: 'Raging Flame Laboratory - Packages', page: 'packages', msg: false })
+};
