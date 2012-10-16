@@ -17,7 +17,15 @@ div(class='navbar-inner')
         else
           li: a(href='/') Home
           
-        li: a(href='http://qawemlilo.rflab.co.za/', target='_blank') Blog
+        if (page === 'packages')
+          li.active: a(href='http://qawemlilo.rflab.co.za/packages', target='_blank') Web Design
+        else
+          li: a(href='http://qawemlilo.rflab.co.za/packages', target='_blank') Web Design
+          
+        if (page === 'tweaks')
+          li.active: a(href='http://qawemlilo.rflab.co.za/tweaks', target='_blank') Website Tweaks
+        else
+          li: a(href='http://qawemlilo.rflab.co.za/tweaks', target='_blank') Website Tweaks
           
         if (page === 'contact')
           li.active: a(href='/contact') Contact
