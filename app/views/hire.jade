@@ -1,14 +1,14 @@
 div(class='row-fluid', id='contact')
 
-  div(class='alert alert-info') Please fill in the form below to tell about your project.
+  div(class='alert alert-info span7') Please fill in the form below and tell me about your project.
   
-  div(class='span7 offset1')
+  div(class='span7')
     form(action='/tweaks', method='post', class='form-horizontal well', style='background-color: transparent; border-color: rgba(0, 0, 0, 0.25);')
       fieldset
         legend(style='margin-bottom: 0px; border-bottom-color: #DDD') Hire Me
  
         div.control-group
-          label(class='control-label', for='type') I want
+          label(class='control-label', for='type') Type of work
           div.controls
             select(id='type', name='type')
               option(value='') Select
@@ -33,7 +33,7 @@ div(class='row-fluid', id='contact')
               option(value='') Select
               option(value='joomla') Joomla!
               option(value='wp') WordPress
-              option(value='no') No CMS
+              option(value='') No CMS
             
         div.control-group
           label(class='control-label', for='language') Type of website
@@ -48,26 +48,36 @@ div(class='row-fluid', id='contact')
           div.controls
             label(class='checkbox')
               input(type='checkbox', value='animation', id='animation', name='animation') 
-              | Does your website require animations
+              | My website requires animations
             
         div.control-group
           label(class='control-label', for='dropdowns') Dropdown Menus
           div.controls
             label(class='checkbox')
               input(type='checkbox', value='dropdowns', id='dropdowns', name='dropdowns') 
-              | Does your website require Dropdown Menus
+              | My website requires dropdown menus
             
         div.control-group
           label(class='control-label', for='slider') Sliding Display
           div.controls
             label(class='checkbox')
               input(type='checkbox', value='slider', id='slider', name='slider') 
-              | Does your website require a Sliding Display
+              | My website requires a sliding display
           
         div.control-group
           label(class='control-label', for='message') Describe your project
           div.controls
             textarea(class='input-xlarge', rows='10', id='message', name='message', placeholder='A detailed description of your project')
+            
+        div.control-group
+          label(class='control-label', for='size') Size of website
+          div.controls
+            select(id='size', name='size')
+              option(value='') Select
+              option(value='1') 1 Month or less
+              option(value='2') 2 Months
+              option(value='3') 3 Months
+              option(value='4') 4 Months or more
           
         div.control-group
           label(class='control-label', for='name') Website Address
