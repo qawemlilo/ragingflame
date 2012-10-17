@@ -5,24 +5,23 @@ div(class='row-fluid', id='contact')
   
   form(action='/tweaks', method='post', class='form-horizontal well')
     fieldset
-      legend Request Changes
-      
+
       div.control-group
         label(class='control-label', for='name') Website Address
         div.controls
-          input(class='input-xlarge', type='text', id='name', name='name', placeholder='http://')
+          input(class='input-xxlarge', type='text', id='name', name='name', placeholder='http://')
           p.help-block The address of the website that you want us to tweak
           
       div.control-group
         label(class='control-label', for='email') Email
         div.controls
-          input(class='input-xlarge', type='text', id='email', name='email', placeholder='email address')
+          input(class='input-xxlarge', type='text', id='email', name='email', placeholder='email address')
           p.help-block Your email address
           
       div.control-group
         label(class='control-label', for='message') What do you want changed?
         div.controls
-          textarea(class='input-xlarge', rows='10', id='message', name='message', placeholder='Details of the changes you want made ...')
+          textarea(class='input-xxlarge', rows='10', id='message', name='message', placeholder='Details of the changes you want made ...')
           p.help-block A detailed breakdown of what you want changed.
           
       div.form-actions
