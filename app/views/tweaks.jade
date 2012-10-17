@@ -5,22 +5,19 @@ div(class='row-fluid', id='contact')
   form(action='/tweaks', method='post', class='form-horizontal well')
     fieldset
       legend Request Form
-      
+ 
       div.control-group
-        label(class='control-label', for='name') 
-          strong Website Address
+        label(class='control-label', for='name') Website Address
         div.controls
           input(class='input-xxlarge', type='text', id='name', name='name', placeholder='http://')
           
       div.control-group
-        label(class='control-label', for='email') 
-          strong Your email address
+        label(class='control-label', for='email') Your email address
         div.controls
           input(class='input-xxlarge', type='text', id='email', name='email', placeholder='@')
           
       div.control-group
-        label(class='control-label', for='message') 
-          strong What do you want changed?
+        label(class='control-label', for='message') What do you want changed?
         div.controls
           textarea(class='input-xxlarge', rows='10', id='message', name='message', placeholder='A detailed breakdown of what you want changed...')
           
