@@ -1,10 +1,10 @@
 div(class='row-fluid', id='contact')
 
-  div(class='alert alert-info') Please fill in the form below and tell us about any bug problems.
+  div(class='alert alert-info') Please fill in the form below to report any bugs or problems.
   
   form(action='/tweaks', method='post', class='form-horizontal well', style='background-color: transparent; border-color: rgba(0, 0, 0, 0.25);')
     fieldset
-      legend(style='margin-bottom: 0px; border-bottom-color: #DDD') Request Form
+      legend(style='margin-bottom: 0px; border-bottom-color: #DDD') Report Bugs
  
       div.control-group
         label(class='control-label', for='name') Website Address
@@ -22,7 +22,7 @@ div(class='row-fluid', id='contact')
           textarea(class='input-xxlarge', rows='10', id='message', name='message', placeholder='A detailed description of your problem')
           
       div(class='form-actions', style='background-color: transparent; border-top: 0px; border-style: none;')
-        button(type='submit', class='btn btn-large btn-block btn-danger') Report Bug
+        button(type='submit', class='btn btn-large btn-block btn-danger') Submit Report
 
 
    
