@@ -1,6 +1,6 @@
 div(class='row-fluid', id='contact')
 
-  div(class='alert alert-info') Please fill in the form below and tell us about the changes that you would like us to make on your website.
+  div(class='alert alert-info') Please fill in the form below and tell us about any bug problems.
   
   form(action='/tweaks', method='post', class='form-horizontal well', style='background-color: transparent; border-color: rgba(0, 0, 0, 0.25);')
     fieldset
@@ -14,15 +14,15 @@ div(class='row-fluid', id='contact')
       div.control-group
         label(class='control-label', for='email') Your email address
         div.controls
-          input(class='input-xxlarge', type='text', id='email', name='email', placeholder='@')
+          input(class='input-xxlarge', type='text', id='email', name='email', placeholder='')
           
       div.control-group
-        label(class='control-label', for='message') What do you want changed?
+        label(class='control-label', for='message') What problems did you encounter?
         div.controls
-          textarea(class='input-xxlarge', rows='10', id='message', name='message', placeholder='A detailed breakdown of what you want changed...')
+          textarea(class='input-xxlarge', rows='10', id='message', name='message', placeholder='A detailed description of your problem')
           
       div(class='form-actions', style='background-color: transparent; border-top: 0px; border-style: none;')
-        button(type='submit', class='btn btn-large btn-block btn-success') Submit Request
+        button(type='submit', class='btn btn-large btn-block btn-danger') Report Bug
 
 
    

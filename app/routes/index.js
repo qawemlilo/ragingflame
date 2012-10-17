@@ -29,3 +29,7 @@ exports.tweaks = function(req, res){
 exports.packages = function(req, res){
   res.render('packages', { title: 'Raging Flame Laboratory - Packages', page: 'packages', msg: false })
 };
+
+exports.hire = function(req, res){
+  res.render('hire', { title: 'Raging Flame Laboratory - Hire Me', page: 'hire', msg: false })
+};

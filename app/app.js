@@ -45,6 +45,8 @@ app.get('/tweaks', routes.tweaks);
 
 app.get('/packages', routes.packages);
 
+app.get('/hire', routes.hire);
+
 // Process contact form
 app.post('/contact', function (req, res) { 
     var mailOpts, validation, smtpTrans, name = req.body.name, email = req.body.email, message = req.body.message, errMsg = '';
