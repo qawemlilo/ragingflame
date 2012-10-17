@@ -22,7 +22,7 @@ if(page == 'hire')
       $('#project').change(function () {
         var val = $(this).val();
         
-        if( val !== 'website') { 
+        if( val !== 'website' && val) { 
           $('.opt-1').slideUp('slow');
         }
         else {
