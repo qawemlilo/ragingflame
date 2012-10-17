@@ -89,7 +89,10 @@ div(class='row-fluid', id='contact')
         div.control-group
           label(class='control-label', for='email') Your email address
           div.controls
-            input(class='input-xlarge', type='text', id='email', name='email', placeholder='')
+            div.input-prepend
+              span.add-on
+                i.icon-envelope
+              input(class='span2', type='text', id='email', name='email')
           
         div(class='form-actions', style='background-color: transparent; border-top: 0px; border-style: none;')
           button(type='submit', class='btn btn-large btn-block btn-success') Submit
