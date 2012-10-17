@@ -17,10 +17,15 @@ div(class='navbar-inner')
         else
           li: a(href='/') Home
           
-        if (page === 'packages')
-          li.active: a(href='/packages') Pricing
+        if (page === 'hire')
+          li.active: a(href='/hire') Hire Me
         else
-          li: a(href='/packages') Pricing
+          li: a(href='/hire') Hire Me
+          
+        if (page === 'packages')
+          li.active: a(href='/packages') Packages
+        else
+          li: a(href='/packages') Packages
           
         if (page === 'tweaks')
           li.active: a(href='/tweaks') Website Tweaks
