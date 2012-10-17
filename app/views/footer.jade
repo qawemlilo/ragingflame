@@ -20,7 +20,7 @@ if(page == 'hire')
   script(type='text/javascript')
     $(function () {
       $('#type').change(function (e) {
-        if($(this).val() !== 'website') { 
+        if($('#type').val() !== 'website') { 
           $('.opt-1').slideDown('slow');
         }
       });
