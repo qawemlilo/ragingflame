@@ -20,8 +20,6 @@ if(page == 'hire')
   script(type='text/javascript')
     $(function () {
       $('#type').change(function (e) {
-        e.preventDefault();
-      
         if($(this).val() !== 'website') { 
           $('.opt-1').slideDown('slow');
         }
