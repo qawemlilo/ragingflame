@@ -5,15 +5,18 @@ div(class='row-fluid', id='contact')
   
   form(action='/tweaks', method='post')
     p 
-      label(class='control-label', for='name') Website Address
+      label(class='control-label', for='name') 
+        strong Website Address
       input(class='input-xxlarge', type='text', id='name', name='name', placeholder='http://')
     
     p
-      label(class='control-label', for='email') Email
+      label(class='control-label', for='email') 
+        strong Email
       input(class='input-xxlarge', name='email', type='text', id='email', placeholder='Your email address')
     
     p
-      label(class='control-label', for='message') What do you want changed?
+      label(class='control-label', for='message') 
+        strong What do you want changed?
       textarea(class='input-xxlarge', rows='10', id='message', name='message', placeholder='Details of the changes you want made ...')
     
     p
