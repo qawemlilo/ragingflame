@@ -19,9 +19,14 @@ if(page == 'contact')
 if(page == 'hire')  
   script(type='text/javascript')
     $(function () {
-      $('#type').change(function (e) {
-        if($('#type').val() !== 'website') { 
+      $('#type').change(function () {
+        var val = $(this).val();
+        
+        if( val !== 'website') { 
           $('.opt-1').slideDown('slow');
+        }
+        else {
+          alert(val);
         }
       });
     });
