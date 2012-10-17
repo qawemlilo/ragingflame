@@ -28,5 +28,16 @@ if(page == 'hire')
         else {
           $('.opt-1').slideDown('slow');
         }
-      });
+      }); 
+      
+      $('#cms').change(function () {
+        var val = $(this).val();
+        
+        if( val === 'website' || val === 'joomla') { 
+          $('.opt-2').slideUp('slow');
+        }
+        else {
+          $('.opt-2').slideDown('slow');
+        }
+      }); 
     });
