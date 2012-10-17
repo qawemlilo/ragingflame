@@ -1,27 +1,28 @@
 div(class='row-fluid', id='contact')
   h1 Request Changes
   
+  br
+  
   p Please fill in the form below and tell us about the changes that you would like us to make on your website.
   
-  form(class='form-horizontal', action='/tweaks', method='post')
-    fieldset
-      div.control-group
-        label(class='control-label', for='name') Website Address
-        div.controls
-          input(class='input-xxlarge', type='text', id='name', name='name', placeholder='http://')
-          
-      div.control-group
-        label(class='control-label', for='email') Email 
-        div.controls
-          input(class='input-xxlarge', name='email', type='text', id='email', placeholder='Your email address')
-      
-      div.control-group
-        label(class='control-label', for='message') What do you want changed?
-        div.controls
-          textarea(class='input-xxlarge', rows='10', id='message', name='message', placeholder='Details of the changes you want made ...')
-          
-      div.form-actions
-        button(type='submit', class='btn btn-large btn-block btn-primary') SUBMIT
+  form(action='/tweaks', method='post')
+    p 
+      label(class='control-label', for='name') Website Address
+      br
+      input(class='input-xxlarge', type='text', id='name', name='name', placeholder='http://')
+    
+    p
+      label(class='control-label', for='email') Email
+      br
+      input(class='input-xxlarge', name='email', type='text', id='email', placeholder='Your email address')
+    
+    p
+      label(class='control-label', for='message') What do you want changed?
+      br
+      textarea(class='input-xxlarge', rows='10', id='message', name='message', placeholder='Details of the changes you want made ...')
+    
+    p
+      button(type='submit', class='btn btn-large btn-block btn-primary') SUBMIT
 
 
    
