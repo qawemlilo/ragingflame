@@ -14,8 +14,10 @@ div(class='row-fluid', id='contact')
               option(value='') Select
               option(value='website') A new website
               option(value='changes') Changes on my website
+              option(value='j-extension') A Joomla! extension
+              option(value='w-plugin') A WordPress plugin
             
-        div.control-group
+        div(class='control-group opt-1')
           label(class='control-label', for='size') Size of website
           div.controls
             select(id='size', name='size')
@@ -26,7 +28,7 @@ div(class='row-fluid', id='contact')
               option(value='4') More than 20 pages
             
             
-        div.control-group
+        div(class='control-group opt-1')
           label(class='control-label', for='cms') Preferred CMS
           div.controls
             select(id='cms', name='cms')
@@ -35,7 +37,7 @@ div(class='row-fluid', id='contact')
               option(value='wp') WordPress
               option(value='') No CMS
             
-        div.control-group
+        div(class='control-group opt-1')
           label(class='control-label', for='language') Type of website
           div.controls
             select(id='language', name='language')
@@ -43,21 +45,21 @@ div(class='row-fluid', id='contact')
               option(value='website') Static Pages (html)
               option(value='changes') Dynamic Pages (php)
 
-        div.control-group
+        div(class='control-group opt-1')
           label(class='control-label', for='animation') Animations
           div.controls
             label(class='checkbox')
               input(type='checkbox', value='animation', id='animation', name='animation') 
               | My website requires animations
             
-        div.control-group
+        div(class='control-group opt-1')
           label(class='control-label', for='dropdowns') Dropdown Menus
           div.controls
             label(class='checkbox')
               input(type='checkbox', value='dropdowns', id='dropdowns', name='dropdowns') 
               | My website requires dropdown menus
             
-        div.control-group
+        div(class='control-group opt-1')
           label(class='control-label', for='slider') Sliding Display
           div.controls
             label(class='checkbox')
