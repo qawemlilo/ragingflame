@@ -3,26 +3,30 @@ div(class='row-fluid', id='contact')
 
   div(class='alert alert-info', style='margin-top: 10px;') Please fill in the form below and tell us about the changes that you would like us to make on your website.
   
-  form(action='/tweaks', method='post')
-    p 
-      label(class='control-label', for='name') 
-        strong Website Address
-      input(class='input-xxlarge', type='text', id='name', name='name', placeholder='http://')
-    
-    p
-      label(class='control-label', for='email') 
-        strong Email
-      input(class='input-xxlarge', name='email', type='text', id='email', placeholder='Your email address')
-    
-    p
-      label(class='control-label', for='message') 
-        strong What do you want changed?
-      textarea(class='input-xxlarge', rows='10', id='message', name='message', placeholder='Details of the changes you want made ...')
-    
-    p
-      button(type='submit', class='btn btn-large btn-block btn-primary') SUBMIT
+  form(action='/tweaks', method='post', class='form-horizontal well')
+    fieldset
+      legend Request Changes
       
-    p  
+      div.control-group
+        label(class='control-label', for='name') Website Address
+        div.controls
+          input(class='input-xlarge', type='text', id='name', name='name', placeholder='http://')
+          p.help-block The address of the website that you want us to tweak
+          
+      div.control-group
+        label(class='control-label', for='email') Email
+        div.controls
+          input(class='input-xlarge', type='text', id='email', name='email', placeholder='email address')
+          p.help-block Your email address
+          
+      div.control-group
+        label(class='control-label', for='message') What do you want changed?
+        div.controls
+          textarea(class='input-xlarge', rows='10', id='message', name='message', placeholder='Details of the changes you want made ...')
+          p.help-block A detailed breakdown of what you want changed.
+          
+      div.form-actions
+        button(type='submit', class='btn btn-large btn-block btn-primary') Submit Request
 
 
    
