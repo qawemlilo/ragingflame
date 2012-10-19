@@ -8,34 +8,41 @@ div(class='row-fluid', id='contact')
   if(msg === 'Message sent! Thank you.')
     div(class='alert alert-success', style='text-align: center') Message sent! Thank you.
     
-  div(class='span6', id='contact-info')
+  div(class='span5', id='contact-info')
     p Available 24/7, please don't hesitate to drop me a line for inquiries or to report bugs.
     
     div.row-fluid
       div.span3 
-        strong Support: 
+        strong Support : 
       div.span9
         a(href='mailto:support@ragingflame.co.za') support@ragingflame.co.za
-      
-    div.row-fluid
-      div.span3
-        strong Twitter:
-      div.span9      
-        a(href='http://twitter.com/ragingflameblog', target='_blank') @ragingflameblog
+        
+    p
     
     div.row-fluid
       div.span3
-        strong Google:
+        strong Twitter :
+      div.span9      
+        a(href='http://twitter.com/ragingflameblog', target='_blank') @ragingflameblog
+        
+    p
+    
+    div.row-fluid
+      div.span3
+        strong Google :
       div.span9      
         a(href='http://twitter.com/ragingflameblog', target='_blank') qawemlilo
+        
+        
+    p
     
     div.row-fluid    
       div.span3
-        strong Github:
+        strong Github :
       div.span9      
         a(href='http://github.com/qawemlilo', target='_blank') qawemlilo
     
-  div(class='span5', id='contact-form')
+  div(class='span7', id='contact-form')
     form(class='form-horizontal', action='/contact', method='post')
       fieldset
         div.control-group
