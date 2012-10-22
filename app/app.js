@@ -110,6 +110,58 @@ app.post('/bugs', function (req, res) {
 });
 
 
+app.post('/bugs', function (req, res) {
+    var website = req.body.website, email = req.body.email, message = req.body.message;
+    
+    
+    // Send maail    
+    routes.mailer(ragingflame, nodemailer, email, 'Bug report from website', message, function(error) {
+        //if sending fails
+        if (error) {
+            //reload the page with an error message
+            res.render('bugs', { title: 'Raging Flame Laboratory - Contact', msg: 'failed', err: true, page: 'bugs' });
+        }
+        //Yay!! message sent
+        else {
+            //reload the page with an success message
+            res.render('bugs', { title: 'Raging Flame Laboratory - Contact', msg: 'sent', err: false, page: 'bugs' });
+        }
+    });
+});
+
+
+app.post('/hire', function (req, res) {
+    var body = '', project = req.body.project, size = req.body.size, cms = req.body.cms, email = req.body.email,
+        language = req.body.language, animation = req.body.animation + '', dropdowns = req.body.dropdowns + '',
+        slider = req.body.slider + '', time = req.body.time, message = req.body.message, website = req.body.website;
+    
+    body += "Type of project: \t " + project + " \n";
+    body += "Size of website: \t " + size + " \n";
+    body += "Preferred CMS: \t " + cms + " \n";
+    body += "Programing Language: \t " + language + " \n";
+    body += "Website requires: \t " + (animation || 'no animation') + " \n";
+    body += "Website requires: \t " + (dropdowns || 'no dropdowns') + " \n";
+    body += "Website requires: \t " + (slider || 'no slider') + " \n";
+    body += "Projected Time: \t " + time + " \n";
+    body += "Project Description: \t " + message + " \n";
+    body += "Website: \t " + website + " \n";
+    
+    // Send maail    
+    routes.mailer(ragingflame, nodemailer, email, 'Bug report from website', body, function(error) {
+        //if sending fails
+        if (error) {
+            //reload the page with an error message
+            res.render('hire', { title: 'Raging Flame Laboratory - Hire Me', msg: 'failed', err: true, page: 'hire' });
+        }
+        //Yay!! message sent
+        else {
+            //reload the page with an success message
+            res.render('hire', { title: 'Raging Flame Laboratory - Hire Me', msg: 'sent', err: false, page: 'hire' });
+        }
+    });
+});
+
+
 app.listen(3002, function git() {
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });

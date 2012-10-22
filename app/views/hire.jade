@@ -1,4 +1,9 @@
 
+if(msg && msg === 'failed')
+  div(class='alert alert-error', style='text-align: center') Error occured, form not submitted.
+if(msg && msg === 'sent')
+  div(class='alert alert-success', style='text-align: center') Form submitted successfully! I will respond in less than 24 hours, thank you!!.
+  
 h1 Hire Me 
 
 p
@@ -6,7 +11,7 @@ p
 div(class='row-fluid', id='contact')
   
   div(class='span7')
-    form(action='/tweaks', method='post', class='form-horizontal well', style='background-color: transparent; border-color: rgba(0, 0, 0, 0.25);')
+    form(action='/hire', method='post', class='form-horizontal well', style='background-color: transparent; border-color: rgba(0, 0, 0, 0.25);')
       fieldset
         legend(style='margin-bottom: 0px; border-bottom-color: #DDD') Project Description
  
@@ -17,8 +22,8 @@ div(class='row-fluid', id='contact')
               option(value='') Select
               option(value='website') A new website
               option(value='changes') Changes on your website
-              option(value='j-extension') Joomla! extension
-              option(value='w-plugin') WordPress plugin
+              option(value='Joomla extension') Joomla! extension
+              option(value='WordPress plugin') WordPress plugin
               option(value='other') Other
             
         div(class='control-group opt-1')
@@ -26,10 +31,10 @@ div(class='row-fluid', id='contact')
           div.controls
             select(id='size', name='size')
               option(value='') Select
-              option(value='1') Up to 6 pages
-              option(value='2') Up to 10 pages
-              option(value='3') Up to 20 pages
-              option(value='4') More than 20 pages
+              option(value='6 pages') Up to 6 pages
+              option(value='10 pages') Up to 10 pages
+              option(value='20 pages') Up to 20 pages
+              option(value='20+ pages') More than 20 pages
             
             
         div(class='control-group opt-1')
@@ -37,8 +42,8 @@ div(class='row-fluid', id='contact')
           div.controls
             select(id='cms', name='cms')
               option(value='') Select
-              option(value='joomla') Joomla!
-              option(value='wp') WordPress
+              option(value='Joomla') Joomla!
+              option(value='WordPress') WordPress
               option(value='') No CMS
             
         div(class='control-group opt-1 opt-2')
@@ -46,8 +51,8 @@ div(class='row-fluid', id='contact')
           div.controls
             select(id='language', name='language')
               option(value='') Select
-              option(value='website') Static Pages (html)
-              option(value='changes') Dynamic Pages (php)
+              option(value='html') Static Pages (html)
+              option(value='php') Dynamic Pages (php)
 
         div(class='control-group opt-1')
           label(class='control-label', for='animation') 
@@ -76,19 +81,19 @@ div(class='row-fluid', id='contact')
             textarea(class='input-xlarge', rows='10', id='message', name='message', placeholder='A detailed description of your project')
             
         div.control-group
-          label(class='control-label', for='size') Projected Time
+          label(class='control-label', for='time') Projected Time
           div.controls
-            select(id='size', name='size')
+            select(id='time', name='time')
               option(value='') Select
-              option(value='1') 1 Month or less
-              option(value='2') 2 Months
-              option(value='3') 3 Months
-              option(value='4') 4 Months or more
+              option(value='1 month') 1 Month or less
+              option(value='2 months') 2 Months
+              option(value='3 months') 3 Months
+              option(value='4 months+') 4 Months or more
           
         div.control-group
-          label(class='control-label', for='name') Website Address
+          label(class='control-label', for='website') Website Address
           div.controls
-            input(class='input-xlarge', type='text', id='name', name='name', placeholder='http://')
+            input(class='input-xlarge', type='text', id='website', name='website', placeholder='http://')
           
         div.control-group
           label(class='control-label', for='email') Your email address

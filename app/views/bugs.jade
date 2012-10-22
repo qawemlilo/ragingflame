@@ -2,9 +2,9 @@ div(class='row-fluid', id='contact')
   if(!msg)
     div(class='alert alert-info') Please fill in the form below to report any bugs or problems.
   if(msg && msg === 'sent')
-    div(class='alert alert-success') Bug report successfully sent! Thank you.
+    div(class='alert alert-success', style='text-align: center') Bug report successfully sent! Thank you.
   if(msg && msg === 'failed')
-    div(class='alert alert-error') An error occured. Bug report not sent.
+    div(class='alert alert-error', style='text-align: center') An error occured. Bug report not sent.
   
   form(action='/bugs', method='post', class='form-horizontal well', style='background-color: transparent; border-color: rgba(0, 0, 0, 0.25);')
     fieldset
