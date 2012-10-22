@@ -147,7 +147,7 @@ app.post('/hireme', function (req, res) {
     body += "Raging Flame Website";
     
     // Send maail    
-    routes.mailer(ragingflame, nodemailer, email, 'Bug report from website', body, function(error) {
+    routes.mailer(ragingflame, nodemailer, email, 'I want to hire you: website', body, function(error) {
         //if sending fails
         if (error) {
             //reload the page with an error message
