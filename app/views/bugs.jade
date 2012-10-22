@@ -6,7 +6,7 @@ div(class='row-fluid', id='contact')
   if(msg && msg === 'failed')
     div(class='alert alert-error') An error occured. Bug report not sent.
   
-  form(action='/tweaks', method='post', class='form-horizontal well', style='background-color: transparent; border-color: rgba(0, 0, 0, 0.25);')
+  form(action='/bugs', method='post', class='form-horizontal well', style='background-color: transparent; border-color: rgba(0, 0, 0, 0.25);')
     fieldset
       legend(style='margin-bottom: 0px; border-bottom-color: #DDD') Report Bugs
  
