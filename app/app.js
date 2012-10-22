@@ -130,21 +130,21 @@ app.post('/bugs', function (req, res) {
 });
 
 
-app.post('/hire', function (req, res) {
+app.post('/hireme', function (req, res) {
     var body = '', project = req.body.project, size = req.body.size, cms = req.body.cms, email = req.body.email,
-        language = req.body.language, animation = req.body.animation + '', dropdowns = req.body.dropdowns + '',
-        slider = req.body.slider + '', time = req.body.time, message = req.body.message, website = req.body.website;
+        language = req.body.language, animation = req.body.animation, dropdowns = req.body.dropdowns,
+        slider = req.body.slider, time = req.body.time, message = req.body.message, website = req.body.website;
     
-    body += "Type of project: \t " + project + " \n";
-    body += "Size of website: \t " + size + " \n";
-    body += "Preferred CMS: \t " + cms + " \n";
-    body += "Programing Language: \t " + language + " \n";
-    body += "Website requires: \t " + (animation || 'no animation') + " \n";
-    body += "Website requires: \t " + (dropdowns || 'no dropdowns') + " \n";
-    body += "Website requires: \t " + (slider || 'no slider') + " \n";
-    body += "Projected Time: \t " + time + " \n";
-    body += "Project Description: \t " + message + " \n";
-    body += "Website: \t " + website + " \n";
+    body += "Type of project: \t " + project + " \n \n";
+    body += "Size of website: \t " + size + " \n \n";
+    body += "Preferred CMS: \t " + cms + " \n \n";
+    body += "Programing Language: \t " + (language || 'not specified') + " \n \n";
+    body += "Website requires: \t " + (animation || 'no animation') + ", " + (dropdowns || 'no dropdowns') + ", " + (slider || 'no slider') + " \n \n";
+    body += "Projected Time: \t " + time + " \n \n";
+    body += "Project Description: \t " + message + " \n \n";
+    body += "Website: \t " + website + " \n \n \n \n";
+    
+    body += "Raging Flame Website";
     
     // Send maail    
     routes.mailer(ragingflame, nodemailer, email, 'Bug report from website', body, function(error) {
