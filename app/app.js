@@ -47,8 +47,8 @@ app.get('/packages', routes.packages);
 
 app.get('/hireme', routes.hire);
 
-app.post('/contact', function (req, res) { 
-    var mailOpts, validation, smtpTrans, name = req.body.name, email = req.body.email, message = req.body.message, errMsg = '';
+app.post('/contact', function (req, res) {
+    var validation, name = req.body.name, email = req.body.email, message = req.body.message, errMsg = '';
     
     //validate form input
     validation = ragingflame.validate.fields({
@@ -73,26 +73,9 @@ app.post('/contact', function (req, res) {
         return;
     }
     
-    // nodemailer configuration
-    smtpTrans = nodemailer.createTransport('SMTP', {
-        service: 'Gmail',
-        auth: {
-            user: ragingflame.email,
-            pass: ragingflame.password
-        }
-    });
-    
-    // mailing options    
-    mailOpts = {
-        from: name + ' <' + email + '>',
-        to: ragingflame.email,
-        subject:'Contact from rflab website',
-        text: 'From: ' + email + "\n \n" +  message
-    };
-    
     
     // Send maail    
-    smtpTrans.sendMail(mailOpts, function (error, response) {
+    routes.mailer(ragingflame, nodemailer, name + ' <' + email + '>', 'Contact from rflab website', message, function(error) {
         //if sending fails
         if (error) {
             //reload the page with an error message
@@ -105,6 +88,7 @@ app.post('/contact', function (req, res) {
         }
     });
 });
+
 
 app.listen(3002, function git() {
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
