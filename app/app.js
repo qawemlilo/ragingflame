@@ -41,7 +41,7 @@ app.get('/projects', routes.projects);
 
 app.get('/contact', routes.contact);
 
-app.get('/tweaks', routes.tweaks);
+app.get('/bugs', routes.bugs);
 
 app.get('/packages', routes.packages);
 
@@ -85,6 +85,26 @@ app.post('/contact', function (req, res) {
         else {
             //reload the page with an success message
             res.render('contact', { title: 'Raging Flame Laboratory - Contact', msg: 'Message sent! Thank you.', err: false, page: 'contact' });
+        }
+    });
+});
+
+
+app.post('/bugs', function (req, res) {
+    var validation, website = req.body.website, email = req.body.email, message = req.body.message;
+    
+    
+    // Send maail    
+    routes.mailer(ragingflame, nodemailer, email, 'Bug report from website', message, function(error) {
+        //if sending fails
+        if (error) {
+            //reload the page with an error message
+            res.render('bugs', { title: 'Raging Flame Laboratory - Contact', msg: 'failed', err: true, page: 'bugs' });
+        }
+        //Yay!! message sent
+        else {
+            //reload the page with an success message
+            res.render('bugs', { title: 'Raging Flame Laboratory - Contact', msg: 'sent', err: false, page: 'bugs' });
         }
     });
 });

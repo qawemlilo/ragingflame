@@ -23,8 +23,8 @@ exports.contact = function (req, res) {
 };
 
 
-exports.tweaks = function (req, res) {
-  res.render('tweaks', { title: 'Raging Flame Laboratory - Tweaks', page: 'tweaks', msg: false });
+exports.bugs = function (req, res) {
+  res.render('bugs', { title: 'Raging Flame Laboratory - Report bugs', page: 'bugs', msg: false });
 };
 
 

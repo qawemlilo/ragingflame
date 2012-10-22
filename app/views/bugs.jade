@@ -1,0 +1,32 @@
+div(class='row-fluid', id='contact')
+  if(!msg)
+    div(class='alert alert-info') Please fill in the form below to report any bugs or problems.
+  if(msg && msg === 'sent')
+    div(class='alert alert-success') Bug report successfully sent! Thank you.
+  if(msg && msg === 'failed')
+    div(class='alert alert-error') An error occured. Bug report not sent.
+  
+  form(action='/tweaks', method='post', class='form-horizontal well', style='background-color: transparent; border-color: rgba(0, 0, 0, 0.25);')
+    fieldset
+      legend(style='margin-bottom: 0px; border-bottom-color: #DDD') Report Bugs
+ 
+      div.control-group
+        label(class='control-label', for='website') Website Address
+        div.controls
+          input(class='input-xxlarge', type='text', id='website', name='website', placeholder='http://')
+          
+      div.control-group
+        label(class='control-label', for='email') Your email address
+        div.controls
+          input(class='input-xxlarge', type='text', id='email', name='email', placeholder='')
+          
+      div.control-group
+        label(class='control-label', for='message') What problems did you encounter?
+        div.controls
+          textarea(class='input-xxlarge', rows='10', id='message', name='message', placeholder='A detailed description of your problem')
+          
+      div(class='form-actions', style='background-color: transparent; border-top: 0px; border-style: none;')
+        button(type='submit', class='btn btn-large btn-block btn-danger') Submit Report
+
+
+   
