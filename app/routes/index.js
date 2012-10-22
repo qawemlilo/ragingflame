@@ -39,9 +39,8 @@ exports.hire = function (req, res) {
 
 
 exports.mailer = function (config, nodemailer, from, subject, message, fn) {
-    "use strict"
-    
-    var mailOpts;
+
+    var mailOpts, smtpTrans;
 
     // nodemailer configuration
     smtpTrans = nodemailer.createTransport('SMTP', {
@@ -72,4 +71,4 @@ exports.mailer = function (config, nodemailer, from, subject, message, fn) {
             fn(false);
         }
     });
-});
+};
