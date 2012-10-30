@@ -84,14 +84,14 @@
     margin: 0 0 0 25px;
 }
 
-#updates blockquote.testimonial-author {
+#updates blockquote.testimonial-quote {
     margin: 0 0 0 25px;
     font-family: Arial, Helvetica, sans-serif;
     color: #999;
     text-align:left;
 }
 
-#updates blockquote.testimonial-author span {
+#updates blockquote.testimonial-quote span {
     font-size: 12px;
     color: #666;
 }
