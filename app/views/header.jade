@@ -13,26 +13,45 @@ div(class='navbar-inner')
     div(class='nav-collapse collapse')
       ul(id='nav-list', class='nav pull-right')
         if (page === 'index')
-          li.active: a(href='/') Home
+          li.active
+            a(href='/') 
+              i(class='icon-home icon-white')     
+              |  Home
         else
-          li: a(href='/') Home
+          li
+            a(href='/') 
+              i(class='icon-home icon-white')     
+              |  Home
           
         if (page === 'hire')
-          li.active: a(href='/hire') Hire Me
+          li.active 
+            a(href='/hire') 
+              i(class='icon-heart icon-white')         
+              |   Hire Me
         else
-          li: a(href='/hireme') Hire Me
-          
-        if (page === 'packages')
-          li.active: a(href='/packages') Packages
-        else
-          li: a(href='/packages') Packages
+          li
+            a(href='/hireme') 
+              i(class='icon-heart icon-white')          
+              |   Hire Me
           
         if (page === 'bugs')
-          li.active: a(href='/bugs') Bug Report
+          li.active
+            a(href='/bugs')
+              i(class='icon-bell icon-white')      
+              |   Bug Report
         else
-          li: a(href='/bugs') Bug Report
+          li
+            a(href='/bugs')
+              i(class='icon-bell icon-white')     
+              |   Bug Report
           
         if (page === 'contact')
-          li.active: a(href='/contact') Contact
+          li.active
+            a(href='/contact')
+              i(class='icon-envelope icon-white')        
+              |   Contact
         else
-          li: a(href='/contact') Contact
+          li
+            a(href='/contact')
+              i(class='icon-envelope icon-white')      
+              |   Contact
