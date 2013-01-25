@@ -8,60 +8,37 @@ h1 Contact Me
 
 p
 
-div(class='row-fluid', id='contact') 
-  div(class='span5', id='contact-info')
-    p Available 24/7, please don't hesitate to drop me a line for inquiries or to report bugs.
-    
-    div.row-fluid
-      div.span3 
-        strong Support : 
-      div.span9
-        a(href='mailto:support@ragingflame.co.za') support@ragingflame.co.za
-        
-    p
-    
-    div.row-fluid
-      div.span3
-        strong Twitter :
-      div.span9      
-        a(href='http://twitter.com/ragingflameblog', target='_blank') @ragingflameblog
-        
-    p
-    
-    div.row-fluid
-      div.span3
-        strong Google :
-      div.span9      
-        a(href='http://twitter.com/ragingflameblog', target='_blank') qawemlilo
-        
-        
-    p
-    
-    div.row-fluid    
-      div.span3
-        strong Github :
-      div.span9      
-        a(href='http://github.com/qawemlilo', target='_blank') qawemlilo
-    
-  div(class='span7', id='contact-form')
-    form(class='form-horizontal', action='/contact', method='post')
-      fieldset
-        div.control-group
-          label(class='control-label', for='name') Name
-          div.controls
-            input(class='input-xlarge', type='text', id='name', name='name', placeholder='Your name')
+div(class='row-fluid') 
+
+  section(class='span5') 
+    div(class='well', style='height: 310px; text-align: center')
+      img(src='/images/qawemail.png', class='img', style='width: 300px; margin-top:30px;')
+      
+      
+  section(class='span7')
+    form(action='/contact', method='post')
+      div.control-group
+        label(class='control-label', for='name') 
+          i.icon-user    
+          |  Name
+        div(class='controls controls-row')
+          input(class='input-xxlarge', type='text', id='name', name='name', placeholder='Your name')
           
-        div.control-group
-          label(class='control-label', for='email') Email
-          div.controls
-            input(class='input-xlarge', name='email', type='text', id='email', placeholder='Your email address')
+      div.control-group
+        label(class='control-label', for='email') 
+        i.icon-envelope   
+        |  Email
+        div.controls
+          input(class='input-xxlarge', name='email', type='text', id='email', placeholder='Your email address')
           
-        div.control-group
-          label(class='control-label', for='message') Message
-          div.controls
-            textarea(class='input-xlarge', rows='3', id='message', name='message', placeholder='Your message...')
+      div.control-group
+        label(class='control-label', for='message') 
+        i.icon-pencil    
+        |  Message
+        div.controls
+          textarea(class='input-xxlarge', rows='3', id='message', name='message', placeholder='Your message...')
           
-        div.form-actions
-          button(type='submit', class='btn btn-large btn-primary') Submit
+      div.form-actions
+        button(type='submit', class='btn btn-large btn-success') Submit
 
    
