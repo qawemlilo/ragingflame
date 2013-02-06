@@ -17,6 +17,12 @@ html(class='no-js', lang='en')
     meta(name='keywords', content='Joomla! development, WordPress development, mobile websites, responsive websites, web design, cms, content management')
     meta(name='viewport', content='width=device-width')
     link(rel='stylesheet', href='http://apps.rflab.co.za/rflab/stylesheets/combined.css')
+    style(type='text/css')
+      ul.thumbnails li {box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1); background-color: #333333; padding: 10px; border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;}
+      div.thumbnail {height: 150px; background-color: #fff; border: 0px; box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);}
+      div.thumbnail h3 {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important; margin-botton: 10px}
+      div.caption {margin-top: 5px; padding:5px 5px 0px 5px;-moz-border-radius: 3px;-webkit-border-radius: 3px;}
+      div.caption a  {color: #fff}
   body
     div(class='navbar navbar-fixed-top')!= partial('header')
     
