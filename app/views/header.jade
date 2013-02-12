@@ -16,7 +16,7 @@ div(class='navbar-inner')
         if (page === 'index')
           li.active
             a(href='/') 
-              i(class='icon-home')     
+              i(class='icon-home icon-white')     
               |  Home
         else
           li
@@ -27,7 +27,7 @@ div(class='navbar-inner')
         if (page === 'hire')
           li.active 
             a(href='/hireme') 
-              i(class='icon-heart')         
+              i(class='icon-heart icon-white')         
               |   Hire Me
         else
           li
@@ -35,21 +35,21 @@ div(class='navbar-inner')
               i(class='icon-heart icon-white')          
               |   Hire Me
           
-        if (page === 'experiments')
+        if (page === 'projects')
           li.active
-            a(href='/experiments')
-              i(class='icon-filter')      
-              |   Experiments 
+            a(href='/projects')
+              i(class='icon-folder-open icon-white')      
+              |   Projects 
         else
           li
-            a(href='/experiments')
-              i(class='icon-filter icon-white')     
-              |   Experiments
+            a(href='/projects')
+              i(class='icon-folder-open icon-white')     
+              |   Projects
           
         if (page === 'contact')
           li.active
             a(href='/contact')
-              i(class='icon-envelope')        
+              i(class='icon-envelope icon-white')        
               |   Contact
         else
           li

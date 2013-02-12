@@ -37,7 +37,7 @@ app.get('/', routes.index);
 
 app.get('/about', routes.about);
 
-app.get('/experiments', routes.experiments);
+app.get('/projects', routes.projects);
 
 app.get('/contact', routes.contact);
 

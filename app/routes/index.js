@@ -13,8 +13,8 @@ exports.about = function (req, res) {
 };
 
 
-exports.experiments = function (req, res) {
-  res.render('experiments', { title: 'Raging Flame Laboratory - Experiments', page: 'experiments', msg: false });
+exports.projects = function (req, res) {
+  res.render('projects', { title: 'Raging Flame Laboratory - Projects', page: 'projects', msg: false });
 };
 
 
