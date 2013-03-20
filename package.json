@@ -13,7 +13,8 @@
     "development"
   ],
   "dependencies": {
-    "connect": "latest"
+    "connect": "latest",
+    "nodemailer": "0.3.x"
   },
   "author": "Qawelesizwe Mlilo",
   "license": "MIT",
